@@ -495,3 +495,96 @@ ul {
         margin-bottom: 40px;
     }
 }
+
+
+/* --- VALIDACIÓN DE FORMULARIOS --- */
+.form-group {
+    position: relative; /* Para posicionar mensajes de error */
+}
+
+/* Estado de error en el input */
+.form-group input.input-error,
+.form-group textarea.input-error {
+    border-color: #ff4d4d; /* Rojo suave */
+    background-color: #fff8f8;
+}
+
+/* Mensaje de error (texto pequeño) */
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+    height: 0; /* Oculto por defecto */
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.form-group.error .error-msg {
+    height: 20px; /* Se muestra cuando hay error */
+}
+
+/* --- TOAST NOTIFICATION (Notificación Personalizada) --- */
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 300px;
+    transform: translateX(120%); /* Empieza fuera de la pantalla */
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efecto rebote */
+    border-left: 5px solid #ccc;
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+.toast.success {
+    border-left-color: var(--primary-purple); /* Morado L.Studios */
+}
+
+.toast.error {
+    border-left-color: #ff4d4d; /* Rojo error */
+}
+
+.toast i {
+    font-size: 1.5rem;
+}
+
+.toast.success i {
+    color: var(--primary-purple);
+}
+
+.toast.error i {
+    color: #ff4d4d;
+}
+
+.toast-content {
+    flex: 1;
+}
+
+.toast-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.toast-message {
+    font-size: 0.9rem;
+    color: #666;
+}
