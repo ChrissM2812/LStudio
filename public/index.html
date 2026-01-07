@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.Studios - Videojuegos que enamoran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1 class="logo-text">L.Studios</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#productos">Proyectos</a></li>
+                    <li><a href="#">Puestos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Más</a></li>
+                </ul>
+                <div class="social-icons-header">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <img src="assets/images/hero-logo-main.png" alt="L.Studios Logo" class="hero-logo">
+            
+            <div class="hero-text">
+                <h2>Disfruta de <br> L.Studios</h2>
+                <p>Una compañía de videojuegos que enamora</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="products-section">
+        <div class="container">
+            <h2 class="section-title center-title">Nuestros proyectos</h2>
+            <p class="section-subtitle center-title">Proyectos destacados</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="assets/images/prod-simulator.png" alt="Ultimate PC Simulator">
+                    </div>
+                    <div class="card-content">
+                        <h3>PC Simulator 2024</h3>
+                        <span class="status">En Desarrollo</span>
+                        <a href="#" class="btn btn-purple-small">Ver Más</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image logo-card">
+                        <img src="assets/images/prod-lshop.png" alt="L-Shop Bot">
+                    </div>
+                    <div class="card-content">
+                        <h3>L-Shop Bot</h3>
+                        <span class="status">En Desarrollo</span>
+                        <a href="#" class="btn btn-purple-small">Ver Más</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image logo-card">
+                        <img src="assets/images/prod-pcready.png" alt="PC Ready">
+                    </div>
+                    <div class="card-content">
+                        <h3>PC Ready</h3>
+                        <span class="status">En Desarrollo</span>
+                        <a href="#" class="btn btn-purple-small">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca" class="about-section">
+        <div class="container about-content">
+            <h2 class="section-title white-title">Acerca de</h2>
+            <p>¿En qué otro trabajo puedes pasar el día dibujando, soñando y jugando videojuegos? En L.Studios fomentamos eso en los miembros de nuestro equipo. Y por eso nos apasiona nuestro trabajo y hacemos buenos juegos. Nos gusta trabajar con diferentes clientes y darle vida a su imaginación. Contáctanos para conocer un poco más nuestros proyectos.</p>
+            <a href="#contacto" class="btn btn-white">Ponte en contacto</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2 class="section-title" style="color: var(--primary-purple);">Contacto</h2>
+                <p>Gracias por tu interés en L.Studios. Si tienes alguna duda o pedido, contáctanos. Con mucho gusto te daremos la información que necesitas.</p>
+                <p class="contact-email">lstudios.contact.pro@gmail.com</p>
+                <div class="social-icons-contact">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-purple-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <h3>Formulario de suscripción</h3>
+            <form class="subscribe-form">
+                <label for="sub-email">Dirección de email</label>
+                <input type="email" id="sub-email" placeholder="Tu email">
+                <button type="submit" class="btn btn-white-outline">Enviar</button>
+            </form>
+            <p class="footer-email">lstudios.contact.pro@gmail.com</p>
+            <p class="copyright">©2024 L.Studios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
