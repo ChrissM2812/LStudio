@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L.Studios - Videojuegos que enamoran</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
 
     <header id="main-header">
-        <div class="container header-content">
-            <div class="logo">
-                <h1 class="logo-text">L.Studios</h1>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#acerca">Acerca de</a></li>
-                    <li><a href="#productos">Proyectos</a></li>
-                    <li><a href="#">Puestos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#">Más</a></li>
-                </ul>
-                <div class="social-icons-header">
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-area">
+                    <a href="#" class="logo-text">L.Studios</a>
+                    <button id="header-toggle" class="toggle-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
                 </div>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="header-collapsible">
+                <div class="collapsible-content">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                            <li><a href="#productos" class="nav-link">Proyectos</a></li>
+                            <li><a href="#acerca" class="nav-link">Acerca de</a></li>
+                            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="social-actions">
+                        <a href="https://youtube.com/@l.studios1680" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/LStudios6" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://discord.gg/9akSK9Q6nU" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
         <div class="container hero-content">
             <img src="assets/images/hero-logo-main.png" alt="L.Studios Logo" class="hero-logo">
-            
             <div class="hero-text">
                 <h2>Disfruta de <br> L.Studios</h2>
                 <p>Una compañía de videojuegos que enamora</p>
@@ -52,7 +55,7 @@
     <section id="productos" class="products-section">
         <div class="container">
             <h2 class="section-title center-title">Nuestros proyectos</h2>
-            <p class="section-subtitle center-title">Proyectos destacados</p>
+            <p class="section-subtitle center-title">Innovando para el 2026</p>
             
             <div class="products-grid">
                 <div class="product-card">
@@ -60,12 +63,11 @@
                         <img src="assets/images/prod-simulator.png" alt="Ultimate PC Simulator">
                     </div>
                     <div class="card-content">
-                        <h3>PC Simulator 2026</h3> <span class="status">En Desarrollo</span>
-                        <a href="#" class="btn btn-purple-small">Ver Más</a>
+                        <h3>PC Simulator 2026</h3>
+                        <span class="status">En Desarrollo</span>
+                        <button class="btn btn-purple-small open-modal" data-modal="modal-simulator">Ver Más</button>
                     </div>
-                    <div class="tech-deco line-top"></div>
-                    <div class="tech-deco line-bottom"></div>
-                    <div class="tech-deco corner-flash"></div>
+                    <div class="tech-deco line-top"></div><div class="tech-deco line-bottom"></div><div class="tech-deco corner-flash"></div>
                 </div>
 
                 <div class="product-card">
@@ -75,11 +77,9 @@
                     <div class="card-content">
                         <h3>L-Shop Bot</h3>
                         <span class="status">En Desarrollo</span>
-                        <a href="#" class="btn btn-purple-small">Ver Más</a>
+                        <button class="btn btn-purple-small open-modal" data-modal="modal-lshop">Ver Más</button>
                     </div>
-                    <div class="tech-deco line-top"></div>
-                    <div class="tech-deco line-bottom"></div>
-                    <div class="tech-deco corner-flash"></div>
+                    <div class="tech-deco line-top"></div><div class="tech-deco line-bottom"></div><div class="tech-deco corner-flash"></div>
                 </div>
 
                 <div class="product-card">
@@ -89,11 +89,9 @@
                     <div class="card-content">
                         <h3>PC Ready</h3>
                         <span class="status">En Desarrollo</span>
-                        <a href="#" class="btn btn-purple-small">Ver Más</a>
+                        <button class="btn btn-purple-small open-modal" data-modal="modal-pcready">Ver Más</button>
                     </div>
-                    <div class="tech-deco line-top"></div>
-                    <div class="tech-deco line-bottom"></div>
-                    <div class="tech-deco corner-flash"></div>
+                    <div class="tech-deco line-top"></div><div class="tech-deco line-bottom"></div><div class="tech-deco corner-flash"></div>
                 </div>
             </div>
         </div>
@@ -102,7 +100,7 @@
     <section id="acerca" class="about-section">
         <div class="container about-content">
             <h2 class="section-title white-title">Acerca de</h2>
-            <p>¿En qué otro trabajo puedes pasar el día dibujando, soñando y jugando videojuegos? En L.Studios fomentamos eso en los miembros de nuestro equipo. Y por eso nos apasiona nuestro trabajo y hacemos buenos juegos. Nos gusta trabajar con diferentes clientes y darle vida a su imaginación. Contáctanos para conocer un poco más nuestros proyectos.</p>
+            <p>¿En qué otro trabajo puedes pasar el día dibujando, soñando y jugando videojuegos? En L.Studios fomentamos eso. Nos gusta trabajar con diferentes clientes y darle vida a su imaginación.</p>
             <a href="#contacto" class="btn btn-white">Ponte en contacto</a>
         </div>
     </section>
@@ -111,44 +109,29 @@
         <div class="container contact-wrapper">
             <div class="contact-info">
                 <h2 class="section-title" style="color: var(--primary-purple);">Contacto</h2>
-                <p>Gracias por tu interés en L.Studios. Si tienes alguna duda o pedido, contáctanos. Con mucho gusto te daremos la información que necesitas.</p>
-                <p class="contact-email">lstudios.contact.pro@gmail.com</p>
-                <div class="social-icons-contact">
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                </div>
+                <p>Si tienes alguna duda o pedido, contáctanos. Estamos listos para escucharte.</p>
+                <p class="contact-email">lstudios.contact.pe@gmail.com</p>
             </div>
-
+            
             <div class="contact-form-container">
-                <form id="contactForm" class="contact-form" novalidate>
+                <form id="contactForm" novalidate>
                     <div class="form-group">
-                        <label for="nombre">Nombre *</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                        <label>Nombre *</label>
+                        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
                         <span class="error-msg"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                        <label>Email *</label>
+                        <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
                         <span class="error-msg"></span>
                     </div>
                     <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono">
-                        <span class="error-msg"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="asunto">Asunto *</label>
-                        <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto" required>
-                        <span class="error-msg"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <label>Mensaje *</label>
+                        <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
                         <span class="error-msg"></span>
                     </div>
                     <button type="submit" class="btn btn-purple-block">
-                        <span class="btn-text">Enviar</span>
+                        <span class="btn-text">Enviar Mensaje</span>
                         <i class="fas fa-spinner fa-spin loading-icon" style="display: none;"></i>
                     </button>
                 </form>
@@ -160,19 +143,71 @@
         <div class="container footer-content">
             <h3>Formulario de suscripción</h3>
             <form id="subscribeForm" class="subscribe-form" novalidate>
-                <label for="sub-email">Dirección de email</label>
-                <input type="email" id="sub-email" placeholder="Tu email" required>
-                <button type="submit" class="btn btn-white-outline">Enviar</button>
+                <div class="sub-input-group">
+                    <input type="email" id="sub-email" placeholder="Tu email" required>
+                    <button type="submit" class="btn btn-white-outline">Suscribirse</button>
+                </div>
             </form>
-            <p class="footer-email">lstudios.contact.pro@gmail.com</p>
-            <p class="copyright">©2024 L.Studios. Todos los derechos reservados.</p>
+            <p class="footer-email">lstudios.contact.pe@gmail.com</p>
+            <p class="copyright">©2026 L.Studios. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <div id="toast-container"></div>
+    <div id="modal-simulator" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-grid">
+                <div class="modal-img">
+                    <img src="assets/images/prod-simulator.png" alt="PC Simulator">
+                </div>
+                <div class="modal-info">
+                    <h2>PC Creator Mod 2026</h2>
+                    <span class="modal-badge">Próximamente</span>
+                    <p>Lleva tu juego al siguiente nivel con nuestro popular y emocionante PC Simulator. No te puedes perder una experiencia épica.</p>
+                    <a href="#" class="btn btn-purple-block">Próximamente en CurseForge</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="modal-lshop" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-grid">
+                <div class="modal-img logo-mode">
+                    <img src="assets/images/prod-lshop.png" alt="L-Shop">
+                </div>
+                <div class="modal-info">
+                    <h2>L-Shop Bot</h2>
+                    <span class="modal-badge">En Desarrollo</span>
+                    <p>La herramienta definitiva para tu servidor. Automatiza ventas, gestiona inventarios y mejora la experiencia de tu comunidad.</p>
+                    <a href="https://discord.gg/9akSK9Q6nU" target="_blank" class="btn btn-purple-block" style="background-color: #5865F2;">
+                        <i class="fab fa-discord"></i> Pruébalo en Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pcready" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-grid">
+                <div class="modal-img logo-mode">
+                    <img src="assets/images/prod-pcready.png" alt="PC Ready">
+                </div>
+                <div class="modal-info">
+                    <h2>PC Ready</h2>
+                    <span class="modal-badge">En Desarrollo</span>
+                    <p>Construye, configura y optimiza tu setup ideal. You buy it, you build it.</p>
+                    <button class="btn btn-purple-block" disabled style="opacity: 0.6; cursor: not-allowed;">Próximamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    
     <script src="assets/js/index.js"></script>
 </body>
 </html>
